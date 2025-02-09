@@ -1,6 +1,6 @@
 
 
-def pair_and_odd(numbers, pair, odd):
+def pair_and_odd_dic(numbers, pair, odd):
     numbers.append({"pair numbers": pair, "odd numbers:": odd}) 
     
 def main():
@@ -14,7 +14,7 @@ def main():
     separate_numbers1 = list(filter(lambda x: x % 2 == 0, numberlist))
     separate_numbers2 = list(filter(lambda x: x % 2 != 0, numberlist))
     
-    pair_and_odd(numberlist, separate_numbers1, separate_numbers2)
+    pair_and_odd_dic(numberlist, separate_numbers1, separate_numbers2)
     
     print("Numbers: ", numberlist)
     
